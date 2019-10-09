@@ -4,7 +4,6 @@ import axios from "axios";
 
 export default function PhotoComp() {
     const [photo, setPhoto] = useState(0);
-    // return "hello there";
     useEffect(() => {
         axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
         .then(response => {
