@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
+import PhotoComp from "./components/Photo";
 
 function App() {
   return (
     <div className="App">
       <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
       </p>
+      <div>
+        <PhotoComp/>
+      </div>
     </div>
   );
 }
