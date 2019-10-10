@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../App.css";
 import axios from "axios";
 
+
 export default function TitleDateComp() {
     const [date, setDate] = useState(0);
     useEffect(() => {
@@ -17,7 +18,7 @@ export default function TitleDateComp() {
 
     return (
     <div className="headerDiv">
-        <h1>Photo of the Day</h1>
+        <h1 className="header">Photo of the Day</h1>
         <div className="date">{date}</div>
     </div>
     )
