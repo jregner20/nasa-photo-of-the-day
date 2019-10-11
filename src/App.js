@@ -1,14 +1,22 @@
 import React from "react";
 import "./App.css";
+// import styled from "styled-components";
+import PhotoComp from "./components/Photo";
+import TitleDateComp from "./components/Header";
+import { BGCard } from "./components/BackgroundCard";
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
+    // <div className="App">
+    <BGCard>
+      <div>
+        <TitleDateComp/>
+      </div>  
+      <div>
+        <PhotoComp/>
+      </div>
+    </BGCard>
+    // </div>
   );
 }
 
