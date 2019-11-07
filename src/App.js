@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <NasaDate dat= {data.date}/>
-      <NasaGrid/>
+      <NasaGrid pho= {data.url}/>
       <ExplanationCard>
         <Explanation exp= {data.explanation}/>
       </ExplanationCard>
